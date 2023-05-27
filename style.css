@@ -176,4 +176,5 @@ img {
 .sw-img {
   width: 70vh;
   height: 50vh;
+  border-radius: 10px;
 }
