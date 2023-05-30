@@ -12,26 +12,33 @@
     <body>
         <div class="theme-switch-container">
             <span id="toggle-icon">
-                <span class="toggle-text">โหมดกลางวัน</span>
+                <span class="toggle-text"></span>
                 <i class="fa-solid fa-sun"></i>
             </span>
             <label class="theme-switch">
                 <input type="checkbox">
-                <div class="slider round"></div>
-            </label>
-
+                <div class="slider round">
+                </label>
+            </div>
         </div>
         <nav id="nav">
-            <a href="#home">เกี่ยวกับเรา</a>
-            <a href="#product">ขั้นตอนการใช้งาน</a>
-            <a href="#contact">ติดต่อ</a>
+            <div id="xmark-responsive">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <a href="#home">เกี่ยวกับเรา</a>
+                <a href="#product">ขั้นตอนการใช้งาน</a>
+                <a href="#contact">ติดต่อ</a>
+            </div>
+            </nav>
+            <div class="nav-responsive" id="bar-responsive">
+                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            </div>
         </nav>
+
         <section id="Home">
             <div class="title-group">
                 <div class="project-container">
-                    <h1>Save Wash</h1>
-                    <h2>บริการล้างรถด้วยตนเอง เปิดแล้ว!
-                        สถานที่ตั้งอยู่ที่จังหวัดโคราช</h2>
+                    <h1>Save W<i class="fa-solid fa-droplet"></i>sh</h1>
+                    <h2>บริการล้างรถด้วยตนเอง เปิดแล้ว!</h2>
                     <h3>สถานบริการล้างรถแบบบริการตนเอง
                         ด้วยเครื่องฉีดน้ำแรงดันสูง 130 บาร์ แรงดีไม่มีตก
                         ใช้น้ำประปาสะอาดไม่ทิ้งคราบตกค้าง
@@ -61,7 +68,8 @@
         </section>
         <section id="product">
             <h1>ขั้นตอนการใช้งาน</h1>
-            <div class="process-container">
+            <div class="row" id="pla2">
+                <!-- <div class="process-container"> -->
                 <div class="img-container">
                     <h2>1. ลงทะเบียนเพื่อสะสมแต้ม<br> </h2>
                     <img src="img/undraw_confirmed_light.svg"></div>
@@ -74,14 +82,16 @@
                 <div class="img-container">
                     <h2>4. อย่าลืมกดให้ดาวเพื่อเป็นส่วนลดครั้งหน้า!<br></h2>
                     <img src="img/undraw_for_review_light.svg"/></div>
+                <!-- </div> -->
             </div>
         </section>
         <section id="contact">
             <h1>ติดต่อ</h1>
             <div class="contact-container">
-                <h2>เบอร์โทร : 088-595-1460</h2>
-                <h2>เพจ Facebook : เซฟวอช SaveWash ล้างรถหยอดเหรียญ</h2>
-                <h2>ที่อยู่ : ถนนราชสีมา-ปักธงชัย ตําบลในเมือง
+                <h2 class="detail">เบอร์โทร : 088-595-1460</h2>
+                <h2 class="detail">เพจ Facebook : เซฟวอช SaveWash
+                    ล้างรถหยอดเหรียญ</h2>
+                <h2 class="detail">ที่อยู่ : ถนนราชสีมา-ปักธงชัย ตําบลในเมือง
                     อําเภอเมืองนครราชสีมา นครราชสีมา</h2>
             </div>
             <div class="social-icon">

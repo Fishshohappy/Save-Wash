@@ -12,7 +12,7 @@ function switchMode(e) {
     }
 }
 function darkMode(a) {
-    toggleIcon.children[0].textContent = "โหมดกลางคืน";
+    toggleIcon.children[0].textContent = "";
     toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon');
     nav.style.backgroundColor = 'rgb(0 0 0/ 50%)';
     // a.forEach(element => {
@@ -24,7 +24,7 @@ function darkMode(a) {
     }
 }
 function lightMode(a) {
-    toggleIcon.children[0].textContent = "โหมดกลางวัน";
+    toggleIcon.children[0].textContent = "";
     toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
     nav.style.backgroundColor = 'rgb(255 255 255/ 50%)';
     for (let index = 0; index < a.length; index++) {
@@ -33,3 +33,24 @@ function lightMode(a) {
     }
 }
 switchToggle.addEventListener('change', switchMode);
+
+window.addEventListener('resize', function () {
+    const row2 = document.getElementById('pla2')
+    if (this.screen.width < 600) {
+        row2.classList.remove('row')
+        row2.classList.add('row-responsive')
+    }
+    else {
+        row2.classList.remove('row-responsive')
+        row2.classList.add('row')
+    }
+})
+
+
+const navbar = document.getElementById("nav")
+function hidemenu() {
+    nav.style.right = "-300px"
+}
+function showmenu() {
+    nav.style.right = "0"
+}
