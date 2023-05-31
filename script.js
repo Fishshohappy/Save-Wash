@@ -46,8 +46,6 @@ window.addEventListener('resize', function () {
     }
 })
 
-
-const navbar = document.getElementById("nav")
 function hidemenu() {
     nav.style.right = "-300px"
 }
